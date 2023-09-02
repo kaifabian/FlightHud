@@ -61,7 +61,7 @@ public class HudRenderer extends HudComponent {
       dim.update(client);
 
       for (HudComponent component : components) {
-        component.render(m, partial, client);
+        component.render(this.ctx, partial, client);
       }
       m.pop();
     } catch (Exception e) {
